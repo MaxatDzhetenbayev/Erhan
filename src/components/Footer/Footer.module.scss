@@ -1,0 +1,31 @@
+.footer {
+   margin-top: 30px;
+   background-color: rgb(43, 43, 43);
+   color: rgb(173, 173, 173);
+   padding: 40px 0 70px;
+}
+
+.inner {
+   display: flex;
+
+
+}
+
+.item {
+   margin-left: 100px;
+}
+
+.item:first-child {
+   margin-left: 0px;
+}
+
+
+a {
+   text-decoration: none;
+   color: rgb(173, 173, 173);
+}
+
+a:hover{
+   color: #fff;
+   transition: all ease 0.2s;
+}

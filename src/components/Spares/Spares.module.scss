@@ -1,0 +1,26 @@
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+}
+
+.item {
+   width: 283px;
+   height: 160px;
+   margin-bottom: 15px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &:hover {
+      transform: translateY(-2px);
+      transition: 0.3s all ease;
+      box-shadow: 3px 3px 20px rgba(71, 71, 71, 0.534)
+   }
+
+   h3 {
+      color: #fff;
+   }
+}

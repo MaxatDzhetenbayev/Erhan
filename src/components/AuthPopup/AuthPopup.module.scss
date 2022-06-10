@@ -1,0 +1,33 @@
+.root {
+
+   padding: 20px 15px 25px;
+   position: fixed;
+   visibility: hidden;
+   bottom: 10px;
+   right: 10px;
+   width: 300px;
+   background-color: rgb(40, 149, 199);
+   color: #fff;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   transition: all 0.2s ease-in-out;
+
+   .wrapperCross {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   .cross {
+      font-size: 14px;
+
+      &:hover {
+         cursor: pointer;
+      }
+   }
+
+   h4 {
+
+      margin-top: 5px;
+   }
+}

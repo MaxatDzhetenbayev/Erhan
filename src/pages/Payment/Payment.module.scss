@@ -1,0 +1,58 @@
+.payment {
+   margin-bottom: 45px;
+
+   & h1 {
+      margin-top: 15px;
+   }
+
+   &_info {
+
+
+
+      &>p {
+         margin-top: 20px;
+
+         h5 {
+            margin-top: 10px;
+         }
+      }
+
+
+   }
+
+   &_choise {
+      display: flex;
+
+
+   }
+
+   &_card {
+      margin-top: 15px;
+      width: 160px;
+      height: 90px;
+      border: 1px dashed #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+         width: 65px;
+         height: 30px;
+      }
+   }
+
+   &_inner {
+      margin-top: 80px;
+   }
+
+   &_cash {
+
+      p {
+         margin-top: 10px;
+      }
+   }
+
+   &_secure {
+      margin-top: 30px;
+   }
+}
