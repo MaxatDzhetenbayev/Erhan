@@ -3,11 +3,14 @@ import { NavLink } from 'react-router-dom'
 import classes from './Header.module.scss'
 import { Context } from '../../Context/Context'
 import { useSelector } from 'react-redux'
+import { BiCart } from 'react-icons/bi'
 
 const Header = () => {
 
+   
    const { isAuth } = useContext(Context)
    const currentUser = useSelector(state => state.userSlice.currentUser)
+   const { cartCount } = useContext(Context)
 
 
    return (
@@ -20,14 +23,28 @@ const Header = () => {
                   <div className={classes.item}><a href="mailto:erhan.addr@mail.ru">erhan.addr@mail.ru</a></div>
                </div>
                <div className={classes.right}>
-
                   <div className={classes.wrapper}>
                      {
                         isAuth
                            ?
-                           <NavLink className={classes.profile} to={`profile/${currentUser.id}`}>{currentUser.name + ' ' + currentUser.surname}</NavLink>
+                           <div className={classes.header_wrapper}>
+                              <NavLink to='/cart' className={classes.cart}>
+                                 {
+                                    cartCount
+                                       ?
+                                       <div className={classes.cartCount}>
+                                          {cartCount}
+                                       </div>
+                                       :
+                                       null
+                                 }
+                                 <BiCart className={classes.cartIcon} />
+                              </NavLink>
+                              <NavLink className={classes.profile} to={`profile/${currentUser.id}`}>{currentUser.name + ' ' + currentUser.surname}</NavLink>
+                           </div>
                            :
                            <NavLink to='/regestration' className={classes.button_items}>Войти</NavLink>
+
                      }
                   </div>
                </div>

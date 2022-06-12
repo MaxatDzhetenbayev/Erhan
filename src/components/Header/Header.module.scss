@@ -16,6 +16,40 @@
    display: flex;
 }
 
+
+.header_wrapper {
+   display: flex;
+   align-items: center;
+
+
+   .cartCount {
+      width: 20px;
+      height: 20px;
+      background-color: rgb(40, 149, 199);
+      border-radius: 50%;
+      display: flex;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: -5px;
+      top: 0;
+   }
+
+   .cart {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      margin-right: 15px;
+      color: rgb(40, 149, 199);
+   }
+
+   .cartIcon {
+      font-size: 32px;
+   }
+}
+
 .profile {
    color: #000;
 
@@ -51,4 +85,5 @@
          transition: all 0.3s ease;
       }
    }
+
 }

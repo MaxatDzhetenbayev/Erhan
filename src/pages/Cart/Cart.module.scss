@@ -1,0 +1,52 @@
+.root {
+   width: 100%;
+   overflow: hidden;
+}
+
+.cart {
+   &_wrapper {
+      height: 510px;
+      overflow: auto;
+      margin-bottom: 25px;
+   }
+
+   &_inner {
+      color: rgb(121, 121, 121);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &_bot {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .price {
+         margin-right: 25px;
+      }
+
+      button {
+         padding: 10px 25px;
+         background-color: rgb(43, 43, 43);
+         color: #fff;
+         border: none;
+         cursor: pointer;
+
+         &:hover {
+            transition: all ease 0.3s;
+            background-color: rgb(40, 149, 199);
+         }
+      }
+   }
+
+   .line {
+      height: 3px;
+      content: '';
+      transform: translateX(-320px);
+      width: 200vw;
+      background-color: rgb(40, 149, 199);
+   }
+}

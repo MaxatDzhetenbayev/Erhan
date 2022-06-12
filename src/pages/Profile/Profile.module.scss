@@ -1,0 +1,33 @@
+.line {
+   height: 3px;
+   content: '';
+   transform: translateX(-320px);
+   width: 200vw;
+   background-color: rgb(40, 149, 199);
+}
+
+.button {
+   margin: 30px 0;
+   padding: 10px;
+   border: none;
+   background-color: rgb(43, 43, 43);
+   color: #fff;
+   cursor: pointer;
+
+}
+
+.items {
+   margin-top: 30px;
+
+   .item {
+      padding: 0 20px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+
+      &:nth-child(2n+1) {
+         background-color: rgb(43, 43, 43);
+         color: #fff;
+      }
+   }
+}

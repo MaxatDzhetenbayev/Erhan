@@ -11,6 +11,7 @@ import Regestration from './pages/Regestration/Registration';
 import Products from './pages/Products/Products';
 import AuthPopup from './components/AuthPopup/AuthPopup';
 import Profile from './pages/Profile/Profile';
+import Cart from './pages/Cart/Cart';
 
 function App() {
    return (
@@ -26,6 +27,7 @@ function App() {
                <Route path='/regestration' element={<Regestration />} />
                <Route path='/product/:id' element={<Products />} />
                <Route path='/profile/:id' element={<Profile />} />
+               <Route path='/cart' element={<Cart />} />
             </Routes>
             <Footer />
             <AuthPopup />

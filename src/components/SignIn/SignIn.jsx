@@ -26,7 +26,7 @@ const SignIn = () => {
       e.preventDefault()
       users.forEach(elem => {
          if (login == elem.login && password == elem.password) {
-            dispatch(addCurrentUser({ id: elem.id, login, password, name: elem.name, surname: elem.surname }))
+            dispatch(addCurrentUser({ id: elem.id, login, password, name: elem.name, surname: elem.surname, cart: elem.cart, }))
             navigate('/')
             setError(false)
             setIsAuth(true)
